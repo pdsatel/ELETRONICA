@@ -1,16 +1,41 @@
+#include <LiquidCrystal>
+
 #define LED_VERDE_C 13
 #define LED_VERMELHO_C 12
 #define LED_AMARELO_C 11
 #define LED_VERDE_P 10
 #define LED_VERMELHO_P 9
 
+#define RS 7
+#define E 6 
+#define DB4 5
+#define DB5 4
+#define DB6 3
+#define DB7 2
+
+#define tringPin A1
+#define echoPin A0
+
+LiquidCrystal "TELA"(RS, E, DB4,DB5,BB6, BD7);
+
 
 void setup() {
+  tela.begin(16,2):
   pinMode(LED_VERMELHO_C, OUTPUT);
   pinMode(LED_VERDE_C, OUTPUT);
   pinMode(LED_AMARELO_C, OUTPUT);
   pinMode(LED_VERDE_P, OUTPUT);
   pinMode(LED_VERMELHO_P, OUTPUT);
+
+  pinMode (trigPin, OUTPUT)
+  DigialWrite(trigPin OUTPUT)
+  pinMode(echoPin, INPUT)
+
+  
+}
+float calc_dist{
+  float duracao, cm;
+    digitalWrite(tringPin,HIGH);
 }
 
 void loop() {
