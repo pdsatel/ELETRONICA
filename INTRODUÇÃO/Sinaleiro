@@ -1,0 +1,37 @@
+#define LED_VERDE_C 13
+#define LED_VERMELHO_C 12
+#define LED_AMARELO_C 11
+#define LED_VERDE_P 10
+#define LED_VERMELHO_P 9
+
+
+void setup() {
+  pinMode(LED_VERMELHO_C, OUTPUT);
+  pinMode(LED_VERDE_C, OUTPUT);
+  pinMode(LED_AMARELO_C, OUTPUT);
+  pinMode(LED_VERDE_P, OUTPUT);
+  pinMode(LED_VERMELHO_P, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_VERMELHO_C, HIGH);
+  digitalWrite(LED_VERDE_C, LOW);
+  digitalWrite(LED_AMARELO_C, LOW);
+  digitalWrite(LED_VERDE_P, HIGH);
+  digitalWrite(LED_VERMELHO_P, LOW);
+  delay(2000);
+
+    digitalWrite(LED_VERMELHO_C, LOW);
+  digitalWrite(LED_VERDE_C, HIGH);
+  digitalWrite(LED_AMARELO_C, LOW);
+  digitalWrite(LED_VERDE_P, LOW);
+  digitalWrite(LED_VERMELHO_P, HIGH);
+  delay(3000);
+
+    digitalWrite(LED_VERMELHO_C, LOW);
+  digitalWrite(LED_VERDE_C, LOW);
+  digitalWrite(LED_AMARELO_C, HIGH);
+  digitalWrite(LED_VERDE_P, LOW);
+  digitalWrite(LED_VERMELHO_P, HIGH);
+  delay(1200);
+}
